@@ -11,9 +11,12 @@ while (StudentLname != "ZZZ"):
     StudentGPA = float(input("Enter the student's GPA: "))
 
     if (StudentGPA >= 3.5):
-        print("the student has made the Dean's List")
+        print(f"{StudentFname} {StudentLname} has made the Dean's List")
     elif(StudentGPA >= 3.2):
-        print("the student has made the Honor Roll.")
+        print(f"{StudentFname} {StudentLname} has made the Honor Roll.")
+    else:
+        print(f"{StudentFname} {StudentLname} does not qualify for the Dean's List or the Honor Roll.")
+        
 
 
 

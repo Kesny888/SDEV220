@@ -5,10 +5,8 @@
 #Create a program that determines if the student qualifies for either the Dean's List or the Honor Roll. It allow the student enter lastname, firstname and GPA. If the student entered last name is 'ZZZ', the program will quit. If the student entered GPA 3.5 or greater, the student qualify for the Dean's list. And if the student entered GPA 3.2 or greater, the student qualiify for the Honor Roll.
 
 
-while True:
-    StudentLname = input("Enter the student's last name or ZZZ to quit: ")
-    if (StudentLname == "ZZZ"):
-        break
+StudentLname = input("Enter the student's last name: ")
+while (StudentLname != "ZZZ"):
     StudentFname = input("Enter the student's first name: ")
     StudentGPA = float(input("Enter the student's GPA: "))
 
@@ -16,8 +14,7 @@ while True:
         print(f"{StudentFname} {StudentLname} has made the Dean's List")
     elif(StudentGPA >= 3.2):
         print(f"{StudentFname} {StudentLname} has made the Honor Roll.")
-    else:
-        print(f"{StudentFname} {StudentLname} does not qualify for the Dean's List or the Honor Roll.")
+    break
         
         
 

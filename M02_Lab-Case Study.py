@@ -14,9 +14,9 @@ while (StudentLname != "ZZZ"):
         print(f"{StudentFname} {StudentLname} has made the Dean's List")
     elif(StudentGPA >= 3.2):
         print(f"{StudentFname} {StudentLname} has made the Honor Roll.")
+    else:
+        print(f"{StudentFname} {StudentLname} does not qualify for the Dean's List or the Honor Roll.")
     break
-        
-        
 
 
 
